@@ -1,0 +1,51 @@
+<div class="auth-page d-flex align-items-center justify-content-center">
+
+    <div class="auth-card shadow-lg">
+  
+      <!-- Left Side (Branding) -->
+      <div class="auth-left d-none d-md-flex">
+        <div class="overlay-content text-white">
+          <h2 class="fw-bold">Welcome Back</h2>
+          <p>Sign in to access your saved properties and manage listings.</p>
+        </div>
+      </div>
+  
+      <!-- Right Side (Form) -->
+      <div class="auth-right p-5">
+  
+        <h3 class="fw-bold mb-4">Sign In</h3>
+  
+        <div class="form-group mb-3">
+          <label class="form-label">Email Address</label>
+          <input 
+            type="email" 
+            class="form-control form-control-lg" 
+            placeholder="Enter your email"
+            [(ngModel)]="email">
+        </div>
+  
+        <div class="form-group mb-3">
+          <label class="form-label">Password</label>
+          <input 
+            type="password" 
+            class="form-control form-control-lg" 
+            placeholder="Enter your password"
+            [(ngModel)]="password">
+        </div>
+  
+        <button 
+          (click)="signin()" 
+          class="btn btn-dark btn-lg w-100 mt-3">
+          Login
+        </button>
+  
+        <p class="text-muted text-center mt-4">
+          Don’t have an account?
+          <a routerLink="/signup" class="fw-bold text-dark">Create one</a>
+        </p>
+  
+      </div>
+  
+    </div>
+  
+  </div>

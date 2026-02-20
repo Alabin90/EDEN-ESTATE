@@ -1,0 +1,57 @@
+.listing-hero {
+    background: url('/assets/image/image32.jpeg') center center/cover no-repeat;
+    height: 40vh;
+    position: relative;
+  }
+  
+  .listing-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+  }
+  
+  .listing-hero .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* PROPERTY CARD */
+  .property-card {
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .property-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  }
+  
+  .property-image-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .property-image {
+    height: 230px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+  
+  .property-card:hover .property-image {
+    transform: scale(1.05);
+  }
+  
+  /* PRICE BADGE */
+  .price-badge {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: #000;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 14px;
+  }

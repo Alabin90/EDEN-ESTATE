@@ -1,0 +1,124 @@
+<body>
+
+  <app-Navbar-component></app-Navbar-component>
+  
+  <!-- HERO SECTION -->
+  <section class="hero-section text-white d-flex align-items-center">
+    <div class="container text-center">
+      <h1 class="fw-bold display-4">
+        Find Your Dream Home With Eden Estate
+      </h1>
+      <p class="lead">Buy, Rent & Sell Properties With Confidence</p>
+  
+      <!-- Search Box -->
+      <div class="bg-white p-3 rounded shadow mt-4">
+        <div class="row g-2">
+          <div class="col-md-4">
+            <input type="text" class="form-control" placeholder="Location">
+          </div>
+          <div class="col-md-3">
+            <select class="form-select">
+              <option>Property Type</option>
+              <option>Apartment</option>
+              <option>Duplex</option>
+              <option>Land</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <select class="form-select">
+              <option>Price Range</option>
+              <option>$10,000 - $50,000</option>
+              <option>$50,000 - $100,000</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-dark w-100">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- FEATURED PROPERTIES -->
+  <section class="container my-5">
+    <h2 class="text-center fw-bold mb-4">Featured Properties</h2>
+  
+    <div class="row g-4">
+  
+      <div class="col-md-4">
+        <div class="card shadow border-0">
+          <img src="/assets/image/image22.jpeg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="fw-bold">Luxury Duplex</h5>
+            <p class="text-muted">Lagos, Nigeria</p>
+            <h6 class="fw-bold text-dark">$120,000</h6>
+            <a routerLink="/properties" class="btn btn-outline-dark w-100 mt-2">View Details</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card shadow border-0">
+          <img src="/assets/image/image23.jpeg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="fw-bold">Modern Apartment</h5>
+            <p class="text-muted">Abuja, Nigeria</p>
+            <h6 class="fw-bold text-dark">$80,000</h6>
+            <a routerLink="/properties" class="btn btn-outline-dark w-100 mt-2">View Details</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card shadow border-0">
+          <img src="/assets/image/image28.jpeg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="fw-bold">Residential Land</h5>
+            <p class="text-muted">Port Harcourt</p>
+            <h6 class="fw-bold text-dark">$45,000</h6>
+            <a routerLink="/properties" class="btn btn-outline-dark w-100 mt-2">View Details</a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+  <!-- WHY CHOOSE US -->
+  <section class="bg-light py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">Why Choose Eden Estate?</h2>
+  
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="fw-bold">Verified Listings</h5>
+          <p>All properties are verified and legally documented.</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold">Trusted Agents</h5>
+          <p>Work with experienced and professional agents.</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold">Secure Transactions</h5>
+          <p>Your payments and documentation are fully secured.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CALL TO ACTION -->
+  <section class="text-white text-center py-5 bg-dark">
+    <div class="container">
+      <h2 class="fw-bold">Ready To Find Your New Home?</h2>
+      <a routerLink="/properties" class="btn btn-light mt-3 px-4">Browse Properties</a>
+    </div>
+  </section>
+  
+  <!-- FOOTER -->
+  <footer class="bg-black text-white py-4">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2026 Eden Estate. All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+  </body>

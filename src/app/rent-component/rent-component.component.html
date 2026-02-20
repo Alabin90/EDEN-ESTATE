@@ -1,0 +1,27 @@
+<app-Navbar-component></app-Navbar-component>
+
+<div class="container py-5">
+  <h2 class="text-center mb-5 fw-bold">Properties for Rent</h2>
+
+  <div class="row mb-4">
+    <div class="col-md-6 mx-auto">
+      <input type="text" class="form-control form-control-lg" placeholder="Search by city or town"
+             [(ngModel)]="searchTerm" (input)="filterProperties()">
+    </div>
+  </div>
+
+  <div class="row g-4">
+    <div *ngFor="let property of filteredProperties" class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <img [src]="property.imageUrl" class="card-img-top" alt="{{ property.title }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ property.title }}</h5>
+          <p class="card-text text-truncate">{{ property.description }}</p>
+          <p><strong>Price:</strong> {{ property.price }}</p>
+          <p><strong>Location:</strong> {{ property.location }}</p>
+          <a [routerLink]="['/properties', property.id]" class="btn btn-primary w-100 mt-2">View Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

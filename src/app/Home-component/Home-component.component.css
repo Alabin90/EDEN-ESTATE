@@ -1,0 +1,17 @@
+.hero-section {
+  background: url('/assets/image/image77.jpeg') center center/cover no-repeat;
+  height: 90vh;
+  position: relative;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
