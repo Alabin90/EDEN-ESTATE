@@ -1,14 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
-import { PropertyListingComponent, Property } from '../property-listing-component/property-listing-component.component';
-import { PropertyService, } from '../property.service';
 import { NavbarComponentComponent } from '../Navbar-component/Navbar-component.component';
+import { PropertyService } from '../property.service';
+import { Property } from '../property-listing-component/property-listing-component.component';
 
 @Component({
+  selector: 'app-property-details',
   standalone: true,
-  imports: [RouterLink, CommonModule, NavbarComponentComponent],
-  selector: 'app-property-details-component',
+  imports: [CommonModule, RouterLink, NavbarComponentComponent],
   templateUrl: './property-details-component.component.html',
   styleUrls: ['./property-details-component.component.css']
 })
